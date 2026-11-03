@@ -1,0 +1,27 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int[] numbers = new int[5];
+        int sum = 0;
+
+        System.out.println("Enter five numbers:");
+
+        for (int i = 0; i < 5; i++) {
+            numbers[i] = sc.nextInt();
+            sum += numbers[i];
+        }
+
+        double average = sum / 5.0;
+
+        System.out.println("Sum = " + sum);
+        System.out.println("Average = " + average);
+
+        sc.close();
+    }
+}
